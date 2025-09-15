@@ -17,6 +17,11 @@ export default defineConfig({
   },
   css: {
     postcss: "./postcss.config.cjs",
+    preprocessorOptions: {
+      css: {
+        charset: false,
+      },
+    },
   },
   server: {
     host: "0.0.0.0",
@@ -28,5 +33,15 @@ export default defineConfig({
   build: {
     outDir: "dist",
     sourcemap: true,
+    rollupOptions: {
+      output: {
+        assetFileNames: (assetInfo) => {
+          if (assetInfo.name && assetInfo.name.endsWith(".css")) {
+            return "assets/css/[name]-[hash][extname]";
+          }
+          return "assets/[name]-[hash][extname]";
+        },
+      },
+    },
   },
 });
