@@ -21,7 +21,7 @@
       "@src/*": ["./src/*"],
       "@components/*": ["./src/components/*"],
       "@pages/*": ["./src/pages/*"],
-      "@assets/*": ["./src/assets/*"],
+      "@assets/*": ["./assets/*"],
       "@styles/*": ["./src/styles/*"]
     },
 
@@ -29,8 +29,9 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "include": ["src"],
+  "include": ["src", "src/types/vite-env.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
