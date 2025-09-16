@@ -1,56 +1,57 @@
-import React from "react";
+import React from 'react'
+import { Project } from '@src/types'
 
 const Projects: React.FC = () => {
-  const projects = [
+  const projects: Project[] = [
     {
       id: 1,
-      title: "E-Commerce Platform",
-      description: "React + Node.jsで構築したフルスタックECサイト",
-      technologies: ["React", "Node.js", "MongoDB", "Docker"],
-      image: "🛒",
-      link: "#",
+      title: 'E-Commerce Platform',
+      description: 'React + Node.jsで構築したフルスタックECサイト',
+      technologies: ['React', 'Node.js', 'MongoDB', 'Docker'],
+      image: '🛒',
+      link: '#',
     },
     {
       id: 2,
-      title: "Task Management App",
-      description: "チーム向けのタスク管理アプリケーション",
-      technologies: ["Vue.js", "Express", "PostgreSQL", "Redis"],
-      image: "📋",
-      link: "#",
+      title: 'Task Management App',
+      description: 'チーム向けのタスク管理アプリケーション',
+      technologies: ['Vue.js', 'Express', 'PostgreSQL', 'Redis'],
+      image: '📋',
+      link: '#',
     },
     {
       id: 3,
-      title: "Real-time Chat",
-      description: "WebSocketを使用したリアルタイムチャットアプリ",
-      technologies: ["React", "Socket.io", "Express", "MongoDB"],
-      image: "💬",
-      link: "#",
+      title: 'Real-time Chat',
+      description: 'WebSocketを使用したリアルタイムチャットアプリ',
+      technologies: ['React', 'Socket.io', 'Express', 'MongoDB'],
+      image: '💬',
+      link: '#',
     },
     {
       id: 4,
-      title: "Portfolio Website",
-      description: "このポートフォリオサイト（Vite + React + TypeScript）",
-      technologies: ["React", "TypeScript", "Vite", "Docker", "Kubernetes"],
-      image: "🎨",
-      link: "#",
+      title: 'Portfolio Website',
+      description: 'このポートフォリオサイト（Vite + React + TypeScript）',
+      technologies: ['React', 'TypeScript', 'Vite', 'Docker', 'Kubernetes'],
+      image: '🎨',
+      link: '#',
     },
     {
       id: 5,
-      title: "Weather Dashboard",
-      description: "天気予報APIを使用したダッシュボード",
-      technologies: ["React", "Chart.js", "OpenWeather API", "CSS3"],
-      image: "🌤️",
-      link: "#",
+      title: 'Weather Dashboard',
+      description: '天気予報APIを使用したダッシュボード',
+      technologies: ['React', 'Chart.js', 'OpenWeather API', 'CSS3'],
+      image: '🌤️',
+      link: '#',
     },
     {
       id: 6,
-      title: "Blog CMS",
-      description: "コンテンツ管理システム付きブログプラットフォーム",
-      technologies: ["Next.js", "Prisma", "PostgreSQL", "Vercel"],
-      image: "📝",
-      link: "#",
+      title: 'Blog CMS',
+      description: 'コンテンツ管理システム付きブログプラットフォーム',
+      technologies: ['Next.js', 'Prisma', 'PostgreSQL', 'Vercel'],
+      image: '📝',
+      link: '#',
     },
-  ];
+  ]
 
   return (
     <div className="pt-20">
@@ -66,7 +67,7 @@ const Projects: React.FC = () => {
       <section className="py-16">
         <div className="max-w-6xl mx-auto px-5">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {projects.map((project) => (
+            {projects.map(project => (
               <div
                 key={project.id}
                 className="bg-white rounded-xl shadow-md overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
@@ -110,7 +111,7 @@ const Projects: React.FC = () => {
         </div>
       </section>
     </div>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
