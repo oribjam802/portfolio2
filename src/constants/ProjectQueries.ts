@@ -6,8 +6,9 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     corporateTitleEn: 'Ueshima Coffee',
     whet: '2019/4~2021/1',
     technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
+    imgLogo: '/assets/images/logo/logo-ucc.svg',
     imagePC: '/assets/images/img/img-ucc-toppage.png',
-    imageSP: '/assets/images/img/img-ucc-toppage-sp.png',
+    imageSP: '/assets/images/img/img-ucc-sp.jpg',
     imageDetailPC: '/assets/images/img/img-ucc-toppage.png',
     imageDetailSP: '/assets/images/img/img-ucc-toppage-sp.png',
     link: 'https://www.ucc.co.jp',
@@ -53,12 +54,13 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     ],
   },
   kyotoEternity: {
-    corporateTitle: 'UCCホールディングス株式会社',
+    corporateTitle: '株式会社京都エタニティ',
     corporateTitleEn: 'Ueshima Coffee',
     whet: '2019/4~2021/1',
     technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
+    imgLogo: '/assets/images/logo/logo-ucc.svg',
     imagePC: '/assets/images/img/img-ucc-toppage.png',
-    imageSP: '/assets/images/img/img-ucc-toppage-sp.png',
+    imageSP: '/assets/images/img/img-ucc-sp.jpg',
     imageDetailPC: '/assets/images/img/img-ucc-toppage.png',
     imageDetailSP: '/assets/images/img/img-ucc-toppage-sp.png',
     link: 'https://www.ucc.co.jp',
@@ -108,8 +110,9 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     corporateTitleEn: 'Ueshima Coffee',
     whet: '2019/4~2021/1',
     technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
+    imgLogo: '/assets/images/logo/logo-ucc.svg',
     imagePC: '/assets/images/img/img-ucc-toppage.png',
-    imageSP: '/assets/images/img/img-ucc-toppage-sp.png',
+    imageSP: '/assets/images/img/img-ucc-sp.jpg',
     imageDetailPC: '/assets/images/img/img-ucc-toppage.png',
     imageDetailSP: '/assets/images/img/img-ucc-toppage-sp.png',
     link: 'https://www.ucc.co.jp',
@@ -156,21 +159,3 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
   },
 }
 export default ProjectQueries
-
-// プロジェクトIDからプロジェクト情報を取得する関数
-// export const getProjectById = (id: ProjectId): ProjectType => {
-//   return {
-//     id,
-//     ...ProjectQueries[id],
-//   }
-// }
-
-// // 全てのプロジェクト情報を取得する関数
-// export const getAllProjects = (): ProjectType[] => {
-//   return Object.keys(ProjectQueries).map(id => getProjectById(id as ProjectId))
-// }
-
-// // プロジェクトIDのリストを取得する関数
-// export const getProjectIds = (): ProjectId[] => {
-//   return Object.keys(ProjectQueries) as ProjectId[]
-// }

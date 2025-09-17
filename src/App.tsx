@@ -13,7 +13,6 @@ const App: React.FC = () => {
         <Home />
         <Projects />
       </main>
-      <Footer />
     </div>
   )
 }

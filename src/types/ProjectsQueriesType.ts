@@ -5,6 +5,7 @@ export type ProjectType = {
   corporateTitleEn: string
   whet: string
   technologies: string[]
+  imgLogo: string
   imagePC: string
   imageSP: string
   imageDetailPC: string
