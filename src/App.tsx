@@ -11,6 +11,7 @@ const App: React.FC = () => {
       <main className="">
         <Home />
         <Projects />
+        <Projects />
       </main>
     </div>
   )
