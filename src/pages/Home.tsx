@@ -3,7 +3,7 @@ import logo from '@assets/images/img/img-logo.svg'
 
 const Home: React.FC = () => {
   return (
-    <section className="w-full h-screen flex flex-col justify-center items-center">
+    <section className="snap-start w-full h-screen flex flex-col justify-center items-center">
       <div className="space-y-10">
         <div className="text-center">
           <img src={logo} alt="Logo" className="inline-block mx-auto" />
