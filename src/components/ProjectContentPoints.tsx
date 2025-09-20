@@ -3,7 +3,6 @@ import clsx from 'clsx'
 import { ProjectsQueriesType } from '@src/types/ProjectsQueriesType'
 import HeadingTitle from '@components/HeadingTitle'
 import DescriptionLists from '@components/DescriptionLists'
-import SkillLists from '@components/SkillLists'
 
 type Props = {
   project: ProjectsQueriesType

@@ -20,3 +20,7 @@ export type ProjectType = {
 }
 
 export type ProjectsQueriesType = ProjectType & { id: ProjectId }
+
+export type ProjectOtherType = {
+  images: string[]
+}
