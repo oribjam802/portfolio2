@@ -6,8 +6,7 @@ export type ProjectType = {
   whet: string
   technologies: string[]
   imgLogo: string
-  imagePC: string[] | string
-  imageSP: string[] | string
+  images: string[]
   imageDetailPC: string
   imageDetailSP: string
   link: string

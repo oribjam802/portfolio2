@@ -47,13 +47,13 @@ const EmblaCarouselWrap: React.FC<Props> = ({
           {showArrows && (
             <>
               <EmblaCarouselArrowButton
-                className="bg-white/15 w-12 h-12 backdrop-blur-lg shadow-[0_0_3px_1px_rgba(81,81,81,0.2)] rounded-full absolute top-0 bottom-0 my-auto -left-[5%] z-20"
+                className="bg-white/15 w-12 h-12 backdrop-blur-lg shadow-[0_0_3px_1px_rgba(81,81,81,0.2)] rounded-full absolute top-0 bottom-0 my-auto -left-[2%] z-20"
                 arrowType="prev"
                 onClick={onPrevButtonClick}
                 disabled={prevBtnDisabled}
               />
               <EmblaCarouselArrowButton
-                className="bg-white/15 w-12 h-12 backdrop-blur-lg shadow-[0_0_3px_1px_rgba(81,81,81,0.2)] rounded-full absolute top-0 bottom-0 my-auto -right-[5%] z-20"
+                className="bg-white/15 w-12 h-12 backdrop-blur-lg shadow-[0_0_3px_1px_rgba(81,81,81,0.2)] rounded-full absolute top-0 bottom-0 my-auto -right-[2%] z-20"
                 arrowType="next"
                 onClick={onNextButtonClick}
                 disabled={nextBtnDisabled}

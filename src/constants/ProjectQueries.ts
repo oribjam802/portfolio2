@@ -7,13 +7,12 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     whet: '2019/4~2021/1',
     technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
     imgLogo: '/assets/images/logo/logo-ucc.svg',
-    imagePC: [
-      '/assets/images/img/ucc/img-ucc-pc--1.png',
-      '/assets/images/img/ucc/img-ucc-toppage2.png',
-    ],
-    imageSP: [
-      '/assets/images/img/ucc/img-ucc-sp--1.png',
-      '/assets/images/img/ucc/img-ucc-sp2.jpg',
+    images: [
+      'assets/images/img/ucc/img-ucc-product-1.png',
+      'assets/images/img/ucc/img-ucc-product-2.png',
+      'assets/images/img/ucc/img-ucc-product-3.png',
+      'assets/images/img/ucc/img-ucc-product-4.png',
+      'assets/images/img/ucc/img-ucc-product-5.png',
     ],
     imageDetailPC: '/assets/images/img/ucc/img-ucc-toppage.png',
     imageDetailSP: '/assets/images/img/ucc/img-ucc-toppage-sp.png',
@@ -65,13 +64,12 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     whet: '2019/4~2021/1',
     technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
     imgLogo: '/assets/images/logo/logo-ucc.svg',
-    imagePC: [
-      '/assets/images/img/ucc/img-ucc-pc--1.png',
-      '/assets/images/img/ucc/img-ucc-toppage2.png',
-    ],
-    imageSP: [
-      '/assets/images/img/ucc/img-ucc-sp--1.png',
-      '/assets/images/img/ucc/img-ucc-sp2.jpg',
+    images: [
+      'assets/images/img/ucc/img-ucc-product-1.png',
+      'assets/images/img/ucc/img-ucc-product-2.png',
+      'assets/images/img/ucc/img-ucc-product-3.png',
+      'assets/images/img/ucc/img-ucc-product-4.png',
+      'assets/images/img/ucc/img-ucc-product-5.png',
     ],
     imageDetailPC: '/assets/images/img/img-ucc-toppage.png',
     imageDetailSP: '/assets/images/img/img-ucc-toppage-sp.png',
@@ -123,13 +121,12 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     whet: '2019/4~2021/1',
     technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
     imgLogo: '/assets/images/logo/logo-ucc.svg',
-    imagePC: [
-      '/assets/images/img/ucc/img-ucc-pc--1.png',
-      '/assets/images/img/ucc/img-ucc-toppage2.png',
-    ],
-    imageSP: [
-      '/assets/images/img/ucc/img-ucc-sp--1.png',
-      '/assets/images/img/ucc/img-ucc-sp2.jpg',
+    images: [
+      'assets/images/img/ucc/img-ucc-product-1.png',
+      'assets/images/img/ucc/img-ucc-product-2.png',
+      'assets/images/img/ucc/img-ucc-product-3.png',
+      'assets/images/img/ucc/img-ucc-product-4.png',
+      'assets/images/img/ucc/img-ucc-product-5.png',
     ],
     imageDetailPC: '/assets/images/img/img-ucc-toppage.png',
     imageDetailSP: '/assets/images/img/img-ucc-toppage-sp.png',
