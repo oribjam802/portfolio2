@@ -1,13 +1,13 @@
 import React from 'react'
 import { ProjectId } from '@src/types/ProjectsQueriesType'
 import ProjectQueries from '@src/constants/ProjectQueries'
-import ProjectContent from '@src/components/ProjectContent'
+import ProjectContents from '@/components/ProjectContents'
 
 const Projects: React.FC = () => {
   return (
     <>
       {Object.entries(ProjectQueries).map(([id, project]) => (
-        <ProjectContent
+        <ProjectContents
           key={id}
           project={{ ...project, id: id as ProjectId }}
         />

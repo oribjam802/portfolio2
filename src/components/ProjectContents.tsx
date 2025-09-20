@@ -8,7 +8,7 @@ type Props = {
   project: ProjectsQueriesType
 }
 
-const ProjectContent: React.FC<Props> = ({ project }) => {
+const ProjectContents: React.FC<Props> = ({ project }) => {
   return (
     <section className="snap-start w-full h-screen flex flex-col max-w-7xl mx-auto px-[4%] py-10 space-y-5">
       <div className="flex justify-between items-center space-x-5">
@@ -35,7 +35,12 @@ const ProjectContent: React.FC<Props> = ({ project }) => {
           className="max-w-28 inline-block vertical-middle"
         />
       </div>
-      <EmblaCarouselWrap loop={false} align="start" showDotButton={true}>
+      <EmblaCarouselWrap
+        loop={false}
+        align="start"
+        showDotButton={true}
+        className="flex-1"
+      >
         <ProjectContentOverview project={project} canSlide={true} />
         <ProjectContentSolution project={project} canSlide={true} />
         <ProjectContentOverview project={project} canSlide={true} />
@@ -44,4 +49,4 @@ const ProjectContent: React.FC<Props> = ({ project }) => {
   )
 }
 
-export default ProjectContent
+export default ProjectContents

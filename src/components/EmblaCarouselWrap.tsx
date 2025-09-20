@@ -40,8 +40,8 @@ const EmblaCarouselWrap: React.FC<Props> = ({
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <div className={clsx('relative h-full flex-1', className)} ref={emblaRef}>
-      <div className="flex space-x-[10%]">{children}</div>
+    <div className={clsx('relative h-full', className)} ref={emblaRef}>
+      <div className="flex space-x-40">{children}</div>
       {showArrows && (
         <>
           {showArrows && (
