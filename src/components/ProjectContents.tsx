@@ -10,7 +10,7 @@ type Props = {
 
 const ProjectContents: React.FC<Props> = ({ project }) => {
   return (
-    <section className="snap-start w-full h-screen flex flex-col max-w-7xl mx-auto px-[4%] py-10 space-y-5">
+    <section className="snap-start w-full h-screen flex flex-col max-w-7xl mx-auto px-5 py-8 space-y-5">
       <div className="flex justify-between items-center space-x-5">
         <div className="space-y-2 flex-1">
           <HeadingTitle title={project.corporateTitle} headingType="h2" />

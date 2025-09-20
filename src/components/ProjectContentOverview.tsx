@@ -14,17 +14,17 @@ const ProjectContentOverview: React.FC<Props> = ({ project, canSlide }) => {
   return (
     <div className={clsx('space-y-5', canSlide && 'flex-[0_0_100%] min-w-0')}>
       <SkillLists skills={project.technologies} />
-      <div className="flex max-w-2xl mx-auto justify-between">
-        <div className="overflow-y-scroll max-w-md h-64">
+      <div className="flex mx-auto justify-center items-start space-x-12">
+        <div className="overflow-hidden max-w-md h-60">
           <img
-            src={project.imagePC}
+            src={project.imagePC?.[0]}
             alt={`${project.corporateTitle}のPCイメージ`}
             className="inline-block w-full"
           />
         </div>
-        <div className="overflow-y-scroll max-w-sm h-64">
+        <div className="overflow-hidden max-w-sm h-60">
           <img
-            src={project.imageSP}
+            src={project.imageSP?.[0]}
             alt={`${project.corporateTitle}のSPイメージ`}
             className="inline-block w-full"
           />
@@ -32,7 +32,10 @@ const ProjectContentOverview: React.FC<Props> = ({ project, canSlide }) => {
       </div>
       <div className="space-y-4">
         <HeadingTitle title="目標" titleEn="Goal" headingType="h3" />
-        <DescriptionLists descriptionTitle={project.goalTitle} />
+        <DescriptionLists
+          descriptionTitle={project.goalTitle}
+          descriptionDescription={project.goalDescription}
+        />
       </div>
     </div>
   )

@@ -10,7 +10,7 @@ const SkillLists: React.FC<Props> = ({ skills }) => {
       {skills.map((item, index) => (
         <div
           key={index}
-          className="bg-gray-800 px-4 py-1.5 rounded-full text-sm text-white"
+          className="bg-gray-700 px-2 py-1 rounded-full text-sm text-white font-Rokkitt min-w-36 text-center"
         >
           {item}
         </div>
