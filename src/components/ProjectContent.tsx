@@ -34,7 +34,7 @@ const ProjectContent: React.FC<Props> = ({ project }) => {
           className="max-w-28 inline-block vertical-middle"
         />
       </div>
-      <EmblaCarouselWrap loop={false} align="start">
+      <EmblaCarouselWrap loop={false} align="start" showDotButton={true}>
         <ProjectContentContext project={project} canSlide={true} />
         <ProjectContentContext project={project} canSlide={true} />
         <ProjectContentContext project={project} canSlide={true} />

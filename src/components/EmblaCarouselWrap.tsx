@@ -1,9 +1,10 @@
 import React, { ReactNode } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import EmblaProgressBar from '@/components/EmblaProgressBar'
+import EmblaCarouselDotButton from '@src/components/EmblaCarouselDotButton'
 import EmblaCarouselArrowButton from '@src/components/EmblaCarouselArrowButtons'
 import { usePrevNextButtons } from '@src/hooks/usePrevNextButtons'
-import { useProgressBar } from '@src/hooks/useProgressBar'
+import { useDotButton } from '@src/hooks/useDotButton'
+
 import clsx from 'clsx'
 
 type Props = {
@@ -12,7 +13,7 @@ type Props = {
   loop?: boolean
   align?: 'start' | 'center' | 'end'
   showArrows?: boolean
-  showProgressBar?: boolean
+  showDotButton?: boolean
 }
 
 const EmblaCarouselWrap: React.FC<Props> = ({
@@ -21,15 +22,15 @@ const EmblaCarouselWrap: React.FC<Props> = ({
   loop = false,
   align = 'start',
   showArrows = true,
-  showProgressBar = true,
+  showDotButton = true,
 }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel({
     loop,
     align,
   })
 
-  const { selectedIndex, scrollSnaps, progress, onProgressBarClick } =
-    useProgressBar(emblaApi)
+  const { selectedIndex, scrollSnaps, onDotButtonClick } =
+    useDotButton(emblaApi)
 
   const {
     prevBtnDisabled,
@@ -41,8 +42,7 @@ const EmblaCarouselWrap: React.FC<Props> = ({
   return (
     <div className={clsx('relative h-full flex-1', className)} ref={emblaRef}>
       <div className="flex space-x-[10%]">{children}</div>
-
-      {(showArrows || showProgressBar) && (
+      {showArrows && (
         <>
           {showArrows && (
             <>
@@ -60,16 +60,15 @@ const EmblaCarouselWrap: React.FC<Props> = ({
               />
             </>
           )}
-
-          {showProgressBar && (
-            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 max-w-md">
-              <EmblaProgressBar
-                progress={progress}
-                totalSlides={scrollSnaps.length}
-                currentIndex={selectedIndex}
-                onProgressClick={onProgressBarClick}
-                className="w-full"
-              />
+          {showDotButton && (
+            <div className="absolute bottom-0 left-0 transform max-w-md flex justify-center items-center space-x-4">
+              {scrollSnaps.map((_, index) => (
+                <EmblaCarouselDotButton
+                  key={index}
+                  onClick={() => onDotButtonClick(index)}
+                  aria-current={selectedIndex === index}
+                />
+              ))}
             </div>
           )}
         </>
