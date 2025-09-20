@@ -4,14 +4,13 @@ export type ProjectType = {
   corporateTitle: string
   corporateTitleEn: string
   whet: string
-  technologies: string[]
+  charge: string[]
   imgLogo: string
   images: string[]
-  imageDetailPC: string
-  imageDetailSP: string
   link: string
   goalTitle: string[]
   goalDescription: string[]
+  technologies: string[]
   resultTitle: string[]
   resultDescription: string[]
   termTitle: string[]

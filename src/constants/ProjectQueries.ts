@@ -5,7 +5,7 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     corporateTitle: 'UCCホールディングス株式会社',
     corporateTitleEn: 'Ueshima Coffee',
     whet: '2019/4~2021/1',
-    technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
+    charge: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
     imgLogo: '/assets/images/logo/logo-ucc.svg',
     images: [
       'assets/images/img/ucc/img-ucc-product-1.png',
@@ -14,8 +14,6 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'assets/images/img/ucc/img-ucc-product-4.png',
       'assets/images/img/ucc/img-ucc-product-5.png',
     ],
-    imageDetailPC: '/assets/images/img/ucc/img-ucc-toppage.png',
-    imageDetailSP: '/assets/images/img/ucc/img-ucc-toppage-sp.png',
     link: 'https://www.ucc.co.jp',
     goalTitle: [
       '全てのコンテンツ更新を担当部署にて行わせたい。',
@@ -26,6 +24,13 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'IT統括部が全てのコンテンツ管理を管理していた現状を踏まえ、全てのコンテンツ・フロントのソースはCMSで一元管理管理し、インシデントの検知のしやすさを明確にするという目的オーダーがあり。',
       '商品一覧ページや詳細ページ、レシピページ、キャンペーンなどもIT統括部がサーバデプロイで行っていた背景から、CMS導入に先駆け、リアルタイムでの情報更新やコンテンツの追加・修正を誰もが簡単に行えるかどうかもオーダーとしてあり。',
       'リプレース後プロモーションページ・ブランドページの定量的な分析の依頼も多数あり、プロモーション業務もオーダーもあり。',
+    ],
+    technologies: [
+      'JQuery/ECMAScript',
+      'HTML/Sass',
+      'GoogleTagManager',
+      'GoogleAnalytics',
+      'LookerStudio',
     ],
     resultTitle: [
       '全てのコンテンツをCMS管理しコーポレートサイトリプレース（権限管理/堅牢性）',
@@ -62,7 +67,7 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     corporateTitle: '株式会社京都エタニティ',
     corporateTitleEn: 'Ueshima Coffee',
     whet: '2019/4~2021/1',
-    technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
+    charge: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
     imgLogo: '/assets/images/logo/logo-ucc.svg',
     images: [
       'assets/images/img/ucc/img-ucc-product-1.png',
@@ -71,8 +76,6 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'assets/images/img/ucc/img-ucc-product-4.png',
       'assets/images/img/ucc/img-ucc-product-5.png',
     ],
-    imageDetailPC: '/assets/images/img/img-ucc-toppage.png',
-    imageDetailSP: '/assets/images/img/img-ucc-toppage-sp.png',
     link: 'https://www.ucc.co.jp',
     goalTitle: [
       '全てのコンテンツ更新を担当部署にて行わせたい。',
@@ -83,6 +86,13 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'IT統括部が全てのコンテンツ管理を管理していた現状を踏まえ、全てのコンテンツ・フロントのソースはCMSで一元管理管理し、インシデントの検知のしやすさを明確にするという目的オーダーがあり。',
       '商品一覧ページや詳細ページ、レシピページ、キャンペーンなどもIT統括部がサーバデプロイで行っていた背景から、CMS導入に先駆け、リアルタイムでの情報更新やコンテンツの追加・修正を誰もが簡単に行えるかどうかもオーダーとしてあり。',
       'リプレース後プロモーションページ・ブランドページの定量的な分析の依頼も多数あり、プロモーション業務もオーダーもあり。',
+    ],
+    technologies: [
+      'JQuery/ECMAScript',
+      'HTML/Sass',
+      'GoogleTagManager',
+      'GoogleAnalytics',
+      'LookerStudio',
     ],
     resultTitle: [
       '全てのコンテンツをCMS管理しコーポレートサイトリプレース（権限管理/堅牢性）',
@@ -119,7 +129,7 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
     corporateTitle: 'UCCホールディングス株式会社',
     corporateTitleEn: 'Ueshima Coffee',
     whet: '2019/4~2021/1',
-    technologies: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
+    charge: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
     imgLogo: '/assets/images/logo/logo-ucc.svg',
     images: [
       'assets/images/img/ucc/img-ucc-product-1.png',
@@ -128,8 +138,6 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'assets/images/img/ucc/img-ucc-product-4.png',
       'assets/images/img/ucc/img-ucc-product-5.png',
     ],
-    imageDetailPC: '/assets/images/img/img-ucc-toppage.png',
-    imageDetailSP: '/assets/images/img/img-ucc-toppage-sp.png',
     link: 'https://www.ucc.co.jp',
     goalTitle: [
       '全てのコンテンツ更新を担当部署にて行わせたい。',
@@ -140,6 +148,13 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'IT統括部が全てのコンテンツ管理を管理していた現状を踏まえ、全てのコンテンツ・フロントのソースはCMSで一元管理管理し、インシデントの検知のしやすさを明確にするという目的オーダーがあり。',
       '商品一覧ページや詳細ページ、レシピページ、キャンペーンなどもIT統括部がサーバデプロイで行っていた背景から、CMS導入に先駆け、リアルタイムでの情報更新やコンテンツの追加・修正を誰もが簡単に行えるかどうかもオーダーとしてあり。',
       'リプレース後プロモーションページ・ブランドページの定量的な分析の依頼も多数あり、プロモーション業務もオーダーもあり。',
+    ],
+    technologies: [
+      'JQuery/ECMAScript',
+      'HTML/Sass',
+      'GoogleTagManager',
+      'GoogleAnalytics',
+      'LookerStudio',
     ],
     resultTitle: [
       '全てのコンテンツをCMS管理しコーポレートサイトリプレース（権限管理/堅牢性）',

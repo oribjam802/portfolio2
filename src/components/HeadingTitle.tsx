@@ -15,9 +15,9 @@ const HeadingTitle: React.FC<Props> = ({ title, headingType, titleEn }) => {
     )
   } else if (headingType === 'h3') {
     return (
-      <h3 className="space-x-2 text-sm border-b border-gray-500 pb-1 text-gray-500 flex justify-between">
+      <h3 className="space-x-2 text-sm border-b border-gray-300 pb-1 text-gray-500 flex justify-between">
         <span className="text-sm text-gray-500">{title}</span>
-        <span className="text-sm text-gray-500">{titleEn}</span>
+        <span className="text-sm text-gray-500 capitalize">{titleEn}</span>
       </h3>
     )
   } else {

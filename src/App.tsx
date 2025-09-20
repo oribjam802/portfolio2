@@ -8,7 +8,7 @@ const App: React.FC = () => {
   return (
     <div className="relative">
       <Header />
-      <main className="overflow-scroll snap-y snap-mandatory h-screen">
+      <main className="overflow-scroll snap-y snap-mandatory h-screen space-y-10">
         <Home />
         <Projects />
       </main>

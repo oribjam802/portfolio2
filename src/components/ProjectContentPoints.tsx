@@ -10,26 +10,26 @@ type Props = {
   canSlide: boolean
 }
 
-const ProjectContentSolution: React.FC<Props> = ({ project, canSlide }) => {
+const ProjectContentPoints: React.FC<Props> = ({ project, canSlide }) => {
   return (
     <div className={clsx('space-y-5', canSlide && 'flex-[0_0_100%] min-w-0')}>
       <SkillLists skills={project.technologies} />
       <div className="space-y-4">
-        <HeadingTitle title="目標" titleEn="Goal" headingType="h3" />
+        <HeadingTitle title="担当" titleEn="Term" headingType="h3" />
         <DescriptionLists
-          descriptionTitle={project.goalTitle}
-          descriptionDescription={project.goalDescription}
+          descriptionTitle={project.termTitle}
+          descriptionDescription={project.termDescription}
         />
       </div>
       <div className="space-y-4">
-        <HeadingTitle title="解決" titleEn="Solution" headingType="h3" />
+        <HeadingTitle title="ポイント" titleEn="Point" headingType="h3" />
         <DescriptionLists
-          descriptionTitle={project.resultTitle}
-          descriptionDescription={project.resultDescription}
+          descriptionTitle={project.pointTitle}
+          descriptionDescription={project.pointDescription}
         />
       </div>
     </div>
   )
 }
 
-export default ProjectContentSolution
+export default ProjectContentPoints

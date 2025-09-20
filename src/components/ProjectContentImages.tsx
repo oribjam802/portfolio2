@@ -8,10 +8,10 @@ type Props = {
   canSlide: boolean
 }
 
-const ProjectContentOverview: React.FC<Props> = ({ project, canSlide }) => {
+const ProjectContentImages: React.FC<Props> = ({ project, canSlide }) => {
   return (
     <div className={clsx('space-y-5', canSlide && 'flex-[0_0_100%] min-w-0')}>
-      <SkillLists skills={project.technologies} />
+      <SkillLists skills={project.charge} />
       <div className="flex space-x-2 items-start max-w-[984px] mx-auto px-4">
         <div className="flex-1 overflow-y-scroll h-[500px]">
           <div className="grid gap-10 grid-template-areasImages justify-start items-start">
@@ -47,4 +47,4 @@ const ProjectContentOverview: React.FC<Props> = ({ project, canSlide }) => {
   )
 }
 
-export default ProjectContentOverview
+export default ProjectContentImages
