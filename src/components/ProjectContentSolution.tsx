@@ -10,7 +10,7 @@ type Props = {
   canSlide: boolean
 }
 
-const ProjectContentContext: React.FC<Props> = ({ project, canSlide }) => {
+const ProjectContentSolution: React.FC<Props> = ({ project, canSlide }) => {
   return (
     <div className={clsx('space-y-5', canSlide && 'flex-[0_0_100%] min-w-0')}>
       <SkillLists skills={project.technologies} />
@@ -38,4 +38,4 @@ const ProjectContentContext: React.FC<Props> = ({ project, canSlide }) => {
   )
 }
 
-export default ProjectContentContext
+export default ProjectContentSolution

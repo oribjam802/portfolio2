@@ -1,7 +1,8 @@
 import React from 'react'
 import { ProjectsQueriesType } from '@src/types/ProjectsQueriesType'
 import HeadingTitle from '@components/HeadingTitle'
-import ProjectContentContext from '@components/ProjectContentContext'
+import ProjectContentOverview from '@/components/ProjectContentOverview'
+import ProjectContentSolution from '@/components/ProjectContentSolution'
 import EmblaCarouselWrap from '@components/EmblaCarouselWrap'
 type Props = {
   project: ProjectsQueriesType
@@ -35,9 +36,9 @@ const ProjectContent: React.FC<Props> = ({ project }) => {
         />
       </div>
       <EmblaCarouselWrap loop={false} align="start" showDotButton={true}>
-        <ProjectContentContext project={project} canSlide={true} />
-        <ProjectContentContext project={project} canSlide={true} />
-        <ProjectContentContext project={project} canSlide={true} />
+        <ProjectContentOverview project={project} canSlide={true} />
+        <ProjectContentSolution project={project} canSlide={true} />
+        <ProjectContentOverview project={project} canSlide={true} />
       </EmblaCarouselWrap>
     </section>
   )
