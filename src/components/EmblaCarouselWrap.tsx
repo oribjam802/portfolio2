@@ -39,7 +39,7 @@ const EmblaCarouselWrap: React.FC<Props> = ({
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <div className={clsx('relative', className)} ref={emblaRef}>
+    <div className={clsx('relative h-full flex-1', className)} ref={emblaRef}>
       <div className="flex space-x-[10%]">{children}</div>
 
       {(showArrows || showProgressBar) && (
@@ -62,7 +62,7 @@ const EmblaCarouselWrap: React.FC<Props> = ({
           )}
 
           {showProgressBar && (
-            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 max-w-md">
+            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-3/4 max-w-md">
               <EmblaProgressBar
                 progress={progress}
                 totalSlides={scrollSnaps.length}
