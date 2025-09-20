@@ -13,7 +13,6 @@ type Props = {
 const ProjectContentPoints: React.FC<Props> = ({ project, canSlide }) => {
   return (
     <div className={clsx('space-y-5', canSlide && 'flex-[0_0_100%] min-w-0')}>
-      <SkillLists skills={project.technologies} />
       <div className="space-y-4">
         <HeadingTitle title="担当" titleEn="Term" headingType="h3" />
         <DescriptionLists
