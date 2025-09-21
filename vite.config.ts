@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig({
   plugins: [react()],
   // GitHub Pages用のベースパス設定
-  base: process.env.NODE_ENV === 'production' ? '/portfolio2/' : '/',
+  base: './',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
