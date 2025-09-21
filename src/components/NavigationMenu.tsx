@@ -1,5 +1,6 @@
 import React from 'react'
 import ProjectQueries from '@src/constants/ProjectQueries'
+import { createLinkClickHandler } from '@src/utils/scrollUtils'
 
 type Props = {
   isMenuOpen: boolean
@@ -7,38 +8,7 @@ type Props = {
 }
 
 const NavigationMenu: React.FC<Props> = ({ isMenuOpen, onMenuClose }) => {
-  const handleLinkClick = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    targetId: string
-  ) => {
-    e.preventDefault()
-    onMenuClose()
-
-    // スクロールコンテナを取得
-    const scrollContainer = document.querySelector('.overflow-scroll')
-    if (!scrollContainer) return
-
-    // ターゲット要素を取得
-    const targetElement = document.getElementById(targetId)
-    if (!targetElement) return
-
-    // ターゲット要素の位置を計算
-    const containerRect = scrollContainer.getBoundingClientRect()
-    const targetRect = targetElement.getBoundingClientRect()
-
-    // スクロール位置を計算（ヘッダーの高さを考慮）
-    const headerOffset = 80
-    const targetScrollTop =
-      scrollContainer.scrollTop +
-      (targetRect.top - containerRect.top) -
-      headerOffset
-
-    // スムーススクロールを実行
-    scrollContainer.scrollTo({
-      top: targetScrollTop,
-      behavior: 'smooth',
-    })
-  }
+  const handleLinkClick = createLinkClickHandler(onMenuClose)
   return (
     <>
       {isMenuOpen && (
