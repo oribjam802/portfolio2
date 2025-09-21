@@ -11,7 +11,7 @@ type Props = {
 
 const ProjectContents: React.FC<Props> = ({ project }) => {
   return (
-    <section className="snap-start w-full h-screen flex flex-col max-w-7xl mx-auto px-5 py-8 space-y-5">
+    <section className="space-y-5 flex w-full flex-col justify-stretch">
       <div className="flex justify-between items-center space-x-5">
         <div className="space-y-2 flex-1">
           <HeadingTitle title={project.corporateTitle} headingType="h2" />
@@ -40,7 +40,7 @@ const ProjectContents: React.FC<Props> = ({ project }) => {
         loop={false}
         align="start"
         showDotButton={true}
-        className="flex-1"
+        className="flex-1 w-full"
       >
         <ProjectContentImages project={project} canSlide={true} />
         <ProjectContentSolution project={project} canSlide={true} />

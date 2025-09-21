@@ -1,6 +1,7 @@
 import React from 'react'
 import clsx from 'clsx'
 import { ProjectsQueriesType } from '@src/types/ProjectsQueriesType'
+import ScrollIcon from '@components/ScrollIcon'
 import SkillLists from '@components/SkillLists'
 
 type Props = {
@@ -39,9 +40,7 @@ const ProjectContentImages: React.FC<Props> = ({ project, canSlide }) => {
             )}
           </div>
         </div>
-        <div className="w-7 scroll order-2">
-          <span>Scroll</span>
-        </div>
+        <ScrollIcon />
       </div>
     </div>
   )

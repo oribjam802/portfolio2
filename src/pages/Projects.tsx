@@ -8,12 +8,16 @@ const Projects: React.FC = () => {
   return (
     <>
       {Object.entries(ProjectQueries).map(([id, project]) => (
-        <ProjectContents
-          key={id}
-          project={{ ...project, id: id as ProjectId }}
-        />
+        <div className="relative snap-start w-full h-screen flex flex-col max-w-7xl mx-auto px-5 py-8 space-y-5 justify-center justify-center">
+          <ProjectContents
+            key={id}
+            project={{ ...project, id: id as ProjectId }}
+          />
+        </div>
       ))}
-      <ProjectContentsOther />
+      <div className="relative snap-start w-full h-screen flex flex-col max-w-7xl mx-auto px-5 py-8 space-y-5 justify-center justify-center">
+        <ProjectContentsOther />
+      </div>
     </>
   )
 }

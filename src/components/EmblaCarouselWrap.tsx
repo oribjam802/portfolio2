@@ -40,8 +40,10 @@ const EmblaCarouselWrap: React.FC<Props> = ({
   } = usePrevNextButtons(emblaApi)
 
   return (
-    <div className={clsx('relative h-full', className)} ref={emblaRef}>
-      <div className="flex space-x-40">{children}</div>
+    <div className={clsx('relative h-full flex justify-center', className)}>
+      <div className="overflow-hidden" ref={emblaRef}>
+        <div className="flex space-x-40 ">{children}</div>
+      </div>
       {showArrows && (
         <>
           {showArrows && (
@@ -61,7 +63,7 @@ const EmblaCarouselWrap: React.FC<Props> = ({
             </>
           )}
           {showDotButton && (
-            <div className="absolute bottom-0 left-0 transform max-w-md flex justify-center items-center space-x-4">
+            <div className="absolute -bottom-3 left-0 transform max-w-md flex justify-center items-center space-x-4">
               {scrollSnaps.map((_, index) => (
                 <EmblaCarouselDotButton
                   key={index}
