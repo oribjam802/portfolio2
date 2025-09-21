@@ -11,7 +11,10 @@ type Props = {
 
 const ProjectContents: React.FC<Props> = ({ project }) => {
   return (
-    <section className="space-y-5 flex w-full flex-col justify-stretch">
+    <section
+      id={project.id}
+      className="space-y-5 flex w-full flex-col justify-stretch"
+    >
       <div className="flex justify-between items-center space-x-5">
         <div className="space-y-2 flex-1">
           <HeadingTitle title={project.corporateTitle} headingType="h2" />

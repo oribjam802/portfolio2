@@ -9,7 +9,7 @@ type Props = {
 const HeadingTitle: React.FC<Props> = ({ title, headingType, titleEn }) => {
   if (headingType === 'h2') {
     return (
-      <h2 className="text-3xl font-bold border-b border-gray-500 pb-2">
+      <h2 className="text-2xl font-bold border-b border-gray-500 pb-2">
         {title}
       </h2>
     )
