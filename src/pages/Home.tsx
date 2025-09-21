@@ -12,7 +12,7 @@ const Home: React.FC = () => {
           <h1 className="text-5xl font-Rokkitt tracking-extraWide text-center">
             YUKI WADA
           </h1>
-          <div className="block text-2xl font-Rokkitt tracking-extraWide text-center">
+          <div className="bloc text-gray-600 text-sm font-Rokkitt tracking-extraWide text-center">
             My Profile & Job History
           </div>
         </div>
