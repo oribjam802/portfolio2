@@ -3,9 +3,42 @@ import ProjectQueries from '@src/constants/ProjectQueries'
 
 type Props = {
   isMenuOpen: boolean
+  onMenuClose: () => void
 }
 
-const NavigationMenu: React.FC<Props> = ({ isMenuOpen }) => {
+const NavigationMenu: React.FC<Props> = ({ isMenuOpen, onMenuClose }) => {
+  const handleLinkClick = (
+    e: React.MouseEvent<HTMLAnchorElement>,
+    targetId: string
+  ) => {
+    e.preventDefault()
+    onMenuClose()
+
+    // スクロールコンテナを取得
+    const scrollContainer = document.querySelector('.overflow-scroll')
+    if (!scrollContainer) return
+
+    // ターゲット要素を取得
+    const targetElement = document.getElementById(targetId)
+    if (!targetElement) return
+
+    // ターゲット要素の位置を計算
+    const containerRect = scrollContainer.getBoundingClientRect()
+    const targetRect = targetElement.getBoundingClientRect()
+
+    // スクロール位置を計算（ヘッダーの高さを考慮）
+    const headerOffset = 80
+    const targetScrollTop =
+      scrollContainer.scrollTop +
+      (targetRect.top - containerRect.top) -
+      headerOffset
+
+    // スムーススクロールを実行
+    scrollContainer.scrollTo({
+      top: targetScrollTop,
+      behavior: 'smooth',
+    })
+  }
   return (
     <>
       {isMenuOpen && (
@@ -18,7 +51,8 @@ const NavigationMenu: React.FC<Props> = ({ isMenuOpen }) => {
               >
                 <a
                   href={`#${id}`}
-                  className="text-gray-700 hover:text-blue-600 transition-colors pl-3 text-white"
+                  onClick={e => handleLinkClick(e, id)}
+                  className="text-gray-700 hover:text-blue-600 transition-colors pl-3 text-white cursor-pointer"
                 >
                   {project.corporateTitle}
                 </a>

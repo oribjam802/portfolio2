@@ -9,6 +9,10 @@ const Header: React.FC = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const closeMenu = () => {
+    setIsMenuOpen(false)
+  }
+
   return (
     <>
       <header className="fixed top-0 right-0 z-20">
@@ -39,11 +43,14 @@ const Header: React.FC = () => {
               ></span>
             ))}
           </button>
-          <NavigationMenu isMenuOpen={isMenuOpen} />
+          <NavigationMenu isMenuOpen={isMenuOpen} onMenuClose={closeMenu} />
         </div>
       </header>
       {isMenuOpen && (
-        <div className="w-screen h-screen bg-black/40 absolute top-0 left-0 z-10"></div>
+        <div
+          className="w-screen h-screen bg-black/40 absolute top-0 left-0 z-10"
+          onClick={closeMenu}
+        ></div>
       )}
     </>
   )
