@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '@assets/images/img/img-logo.svg'
+import logo from '/images/img/img-logo.svg'
 
 const Home: React.FC = () => {
   return (

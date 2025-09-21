@@ -7,8 +7,6 @@ export default defineConfig({
   plugins: [react()],
   // GitHub Pages用のベースパス設定
   base: process.env.NODE_ENV === 'production' ? '/portfolio2/' : '/',
-  // 静的アセットのコピー設定
-  publicDir: 'assets',
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),

@@ -1,5 +1,5 @@
 import React from 'react'
-import ImgPerson from '@assets/images/img/other/img-person.jpg'
+import ImgPerson from '/images/img/other/img-person.jpg'
 
 const Footer: React.FC = () => {
   return (
