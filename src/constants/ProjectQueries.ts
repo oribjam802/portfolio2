@@ -1,18 +1,21 @@
 import { ProjectType, ProjectId } from '@src/types/ProjectsQueriesType'
 
+// ベースパスを動的に取得
+const baseUrl = import.meta.env.BASE_URL
+
 const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
   ucc: {
     corporateTitle: 'UCCホールディングス株式会社',
     corporateTitleEn: 'Ueshima Coffee',
     whet: '2019/4~2021/1',
     charge: ['Direction/Plan', 'Code', 'Frontend Develop', 'Research'],
-    imgLogo: '/assets/images/logo/logo-ucc.svg',
+    imgLogo: `${baseUrl}assets/images/logo/logo-ucc.svg`,
     images: [
-      '/assets/images/img/ucc/img-ucc-product-1.png',
-      '/assets/images/img/ucc/img-ucc-product-2.png',
-      '/assets/images/img/ucc/img-ucc-product-3.png',
-      '/assets/images/img/ucc/img-ucc-product-4.png',
-      '/assets/images/img/ucc/img-ucc-product-5.png',
+      `${baseUrl}assets/images/img/ucc/img-ucc-product-1.png`,
+      `${baseUrl}assets/images/img/ucc/img-ucc-product-2.png`,
+      `${baseUrl}assets/images/img/ucc/img-ucc-product-3.png`,
+      `${baseUrl}assets/images/img/ucc/img-ucc-product-4.png`,
+      `${baseUrl}assets/images/img/ucc/img-ucc-product-5.png`,
     ],
     link: 'https://www.ucc.co.jp',
     goalTitle: [
@@ -74,13 +77,13 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'Frontend Develop',
       'Research',
     ],
-    imgLogo: '/assets/images/logo/logo-navinavihoken.png',
+    imgLogo: `${baseUrl}assets/images/logo/logo-navinavihoken.png`,
     images: [
-      '/assets/images/img/navinavihoken/img-navinavihoken-product-1.png',
-      '/assets/images/img/navinavihoken/img-navinavihoken-product-2.png',
-      '/assets/images/img/navinavihoken/img-navinavihoken-product-3.png',
-      '/assets/images/img/navinavihoken/img-navinavihoken-product-4.png',
-      '/assets/images/img/navinavihoken/img-navinavihoken-product-5.png',
+      `${baseUrl}assets/images/img/navinavihoken/img-navinavihoken-product-1.png`,
+      `${baseUrl}assets/images/img/navinavihoken/img-navinavihoken-product-2.png`,
+      `${baseUrl}assets/images/img/navinavihoken/img-navinavihoken-product-3.png`,
+      `${baseUrl}assets/images/img/navinavihoken/img-navinavihoken-product-4.png`,
+      `${baseUrl}assets/images/img/navinavihoken/img-navinavihoken-product-5.png`,
     ],
     link: 'https://www.navinavi-hoken.com/',
     goalTitle: [
@@ -137,13 +140,13 @@ const ProjectQueries: Record<ProjectId, Omit<ProjectType, 'id'>> = {
       'Frontend Develop',
       'Marketing',
     ],
-    imgLogo: '/assets/images/logo/logo-eternity.svg',
+    imgLogo: `${baseUrl}assets/images/logo/logo-eternity.svg`,
     images: [
-      '/assets/images/img/kyotoeternity/img-kyotoeternity-product-1.png',
-      '/assets/images/img/kyotoeternity/img-kyotoeternity-product-2.png',
-      '/assets/images/img/kyotoeternity/img-kyotoeternity-product-3.png',
-      '/assets/images/img/kyotoeternity/img-kyotoeternity-product-4.png',
-      '/assets/images/img/kyotoeternity/img-kyotoeternity-product-5.png',
+      `${baseUrl}assets/images/img/kyotoeternity/img-kyotoeternity-product-1.png`,
+      `${baseUrl}assets/images/img/kyotoeternity/img-kyotoeternity-product-2.png`,
+      `${baseUrl}assets/images/img/kyotoeternity/img-kyotoeternity-product-3.png`,
+      `${baseUrl}assets/images/img/kyotoeternity/img-kyotoeternity-product-4.png`,
+      `${baseUrl}assets/images/img/kyotoeternity/img-kyotoeternity-product-5.png`,
     ],
     link: 'https://www.jiyuujinn.com/',
     goalTitle: [
